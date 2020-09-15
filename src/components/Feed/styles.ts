@@ -58,7 +58,7 @@ export const Post = styled.div`
     }
   }
 
-  footer {
+  > footer {
     padding: 10px 0 10px 16px;
     display: flex;
     align-items: center;

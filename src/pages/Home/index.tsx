@@ -22,6 +22,7 @@ const Home: React.FC = () => {
         <ContainerFeed>
           <Stories />
           <Feed />
+          <Feed />
         </ContainerFeed>
         <ContainerUserInfo>
           <UserInfo />

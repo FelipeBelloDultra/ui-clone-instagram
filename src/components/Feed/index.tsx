@@ -1,5 +1,7 @@
 import React from 'react';
 
+import CommentFeed from '../CommentFeed';
+
 import { Container, Post, StoriesContainer } from './styles';
 
 import commentIcon from '../../assets/feed-icons/comment.png';
@@ -32,8 +34,7 @@ const Feed: React.FC = () => {
             <img src={saveIcon} alt="Save" />
           </span>
         </footer>
-
-        <main />
+        <CommentFeed />
       </Post>
     </Container>
   );
