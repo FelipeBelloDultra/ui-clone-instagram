@@ -20,7 +20,7 @@ const Header: React.FC = () => {
       <img src={logoHeader} alt="Instagram Logo" />
 
       <InputContainer>
-        <FiSearch color="#8e8e8e" size={15} />
+        <FiSearch color="#8e8e8e" size={14} />
         <input type="text" placeholder="Search" />
       </InputContainer>
 
