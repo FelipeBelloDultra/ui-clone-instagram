@@ -39,7 +39,23 @@ export const Post = styled.div`
     height: 500px;
     border-left: 1px solid #dbdbdb;
     border-right: 1px solid #dbdbdb;
-    background: #000;
+    background-image: linear-gradient(
+      -90deg,
+      #c9c9c9 0%,
+      #dbdbdb 50%,
+      #c9c9c9 100%
+    );
+    background-size: 400% 400%;
+    animation: shimmer 1.2s ease-in-out infinite;
+
+    @keyframes shimmer {
+      0% {
+        background-position: 0% 0%;
+      }
+      100% {
+        background-position: -135% 0%;
+      }
+    }
   }
 
   footer {
@@ -75,7 +91,7 @@ export const StoriesContainer = styled.div<IStoriesProps>`
     ${props =>
       props.isCloseFriend
         ? css`
-            background: #00ff00;
+            background: #64cd2f;
           `
         : css`
             background: linear-gradient(#f99d4c, #e783ae);
@@ -98,9 +114,25 @@ export const StoriesContainer = styled.div<IStoriesProps>`
       height: 32px;
       width: 32px;
       border-radius: 50%;
-      background: #000;
       left: 4px;
       bottom: 4px;
+      background-image: linear-gradient(
+        -90deg,
+        #c9c9c9 0%,
+        #dbdbdb 50%,
+        #c9c9c9 100%
+      );
+      background-size: 400% 400%;
+      animation: shimmer 1.2s ease-in-out infinite;
+
+      @keyframes shimmer {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: -135% 0%;
+        }
+      }
     }
   }
 

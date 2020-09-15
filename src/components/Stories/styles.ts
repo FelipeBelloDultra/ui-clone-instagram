@@ -36,7 +36,7 @@ export const StoriesContainer = styled.aside<IStoriesProps>`
     ${props =>
       props.isCloseFriend
         ? css`
-            background: #00ff00;
+            background: #64cd2f;
           `
         : css`
             background: linear-gradient(#f99d4c, #e783ae);
@@ -59,9 +59,25 @@ export const StoriesContainer = styled.aside<IStoriesProps>`
       height: 58px;
       width: 58px;
       border-radius: 50%;
-      background: #000;
       left: 4px;
       bottom: 4px;
+      background-image: linear-gradient(
+        -90deg,
+        #c9c9c9 0%,
+        #dbdbdb 50%,
+        #c9c9c9 100%
+      );
+      background-size: 400% 400%;
+      animation: shimmer 1.2s ease-in-out infinite;
+
+      @keyframes shimmer {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: -135% 0%;
+        }
+      }
     }
   }
 

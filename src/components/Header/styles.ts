@@ -68,7 +68,23 @@ export const OptionsItems = styled.a<IIconsHeaderProps>`
     width: 100%;
     height: 100%;
     border-radius: 50%;
-    background: linear-gradient(to right, #f99d4c, #e783ae);
+    background-image: linear-gradient(
+      -90deg,
+      #c9c9c9 0%,
+      #dbdbdb 50%,
+      #c9c9c9 100%
+    );
+    background-size: 400% 400%;
+    animation: shimmer 1.2s ease-in-out infinite;
+
+    @keyframes shimmer {
+      0% {
+        background-position: 0% 0%;
+      }
+      100% {
+        background-position: -135% 0%;
+      }
+    }
   }
 
   &:before {
