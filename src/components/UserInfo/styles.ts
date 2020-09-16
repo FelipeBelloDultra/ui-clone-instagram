@@ -76,3 +76,61 @@ export const Suggestions = styled.div`
     font-size: 12px;
   }
 `;
+
+export const SuggestionsList = styled.div`
+  aside {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    margin-bottom: 16px;
+
+    > span {
+      cursor: pointer;
+      margin-right: 15px;
+      height: 32px;
+      width: 32px;
+      border-radius: 50%;
+      background-image: linear-gradient(
+        -90deg,
+        #c9c9c9 0%,
+        #dbdbdb 50%,
+        #c9c9c9 100%
+      );
+      background-size: 400% 400%;
+      animation: shimmer 1.2s ease-in-out infinite;
+
+      @keyframes shimmer {
+        0% {
+          background-position: 0% 0%;
+        }
+        100% {
+          background-position: -135% 0%;
+        }
+      }
+    }
+
+    div {
+      font-size: 14px;
+
+      p {
+        font-weight: bold;
+        cursor: pointer;
+      }
+
+      span {
+        color: #8e8e8e;
+        letter-spacing: -0.5px;
+        font-size: 12px;
+      }
+    }
+
+    button {
+      cursor: pointer;
+      margin-left: auto;
+      background: transparent;
+      color: #06a8fa;
+      font-weight: bold;
+      font-size: 12px;
+    }
+  }
+`;
