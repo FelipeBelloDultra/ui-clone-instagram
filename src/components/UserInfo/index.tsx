@@ -5,6 +5,7 @@ import {
   UserDataContainer,
   Suggestions,
   SuggestionsList,
+  Links,
 } from './styles';
 
 const UserInfo: React.FC = () => {
@@ -76,6 +77,20 @@ const UserInfo: React.FC = () => {
           <button type="button">Follow</button>
         </aside>
       </SuggestionsList>
+
+      <Links>
+        <p>About</p>
+        <p>Help</p>
+        <p>Press</p>
+        <p>Api</p>
+        <p>Jobs</p>
+        <p>Privacy</p>
+        <p>Terms</p>
+        <p>Locations</p>
+        <p>Too Accounts</p>
+        <p>Hashtags</p>
+        <p>Languge</p>
+      </Links>
     </Container>
   );
 };

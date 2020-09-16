@@ -134,3 +134,21 @@ export const SuggestionsList = styled.div`
     }
   }
 `;
+
+export const Links = styled.div`
+  margin-top: 56px;
+  margin-bottom: 20px;
+
+  display: flex;
+  align-items: center;
+  flex-wrap: wrap;
+  justify-content: start;
+
+  p {
+    cursor: pointer;
+    margin-right: 10px;
+    margin-bottom: 7px;
+    font-size: 11px;
+    color: #d1d1d1;
+  }
+`;
