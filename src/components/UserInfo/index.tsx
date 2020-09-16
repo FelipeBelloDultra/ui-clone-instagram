@@ -91,6 +91,8 @@ const UserInfo: React.FC = () => {
         <p>Hashtags</p>
         <p>Languge</p>
       </Links>
+
+      <p>© 2020 INSTAGRAM FROM FACEBOOK</p>
     </Container>
   );
 };

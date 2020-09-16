@@ -6,6 +6,11 @@ export const Container = styled.div`
   height: 492px;
   margin-top: 30px;
   padding: 20px 0 0 30px;
+
+  > p {
+    font-size: 11px;
+    color: #d1d1d1;
+  }
 `;
 
 export const UserDataContainer = styled.div`
@@ -137,7 +142,7 @@ export const SuggestionsList = styled.div`
 
 export const Links = styled.div`
   margin-top: 56px;
-  margin-bottom: 20px;
+  margin-bottom: 15px;
 
   display: flex;
   align-items: center;
