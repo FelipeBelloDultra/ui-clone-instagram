@@ -54,3 +54,25 @@ export const UserDataContainer = styled.div`
     }
   }
 `;
+
+export const Suggestions = styled.div`
+  margin-top: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  .suggestions {
+    cursor: pointer;
+    color: #8e8e8e;
+    font-weight: bold;
+    font-size: 14px;
+  }
+
+  .see-all {
+    cursor: pointer;
+    color: #000000;
+    font-weight: bold;
+    font-size: 12px;
+  }
+`;

@@ -1,6 +1,6 @@
 import React from 'react';
 
-import { Container, UserDataContainer } from './styles';
+import { Container, UserDataContainer, Suggestions } from './styles';
 
 const UserInfo: React.FC = () => {
   return (
@@ -13,6 +13,11 @@ const UserInfo: React.FC = () => {
           <span>Felipe Bello Dultra</span>
         </div>
       </UserDataContainer>
+
+      <Suggestions>
+        <p className="suggestions">Suggestions For You</p>
+        <p className="see-all">See All</p>
+      </Suggestions>
     </Container>
   );
 };
